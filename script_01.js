@@ -15,12 +15,11 @@
 const ERROR_STR_DIV = "Division durch 0 nicht möglich";
 
 // module: division a / b |  test:
-
-output(devide(4, 2));
-output(devide(3, 2));
-output(devide(3, -2));
-output(devide(0, 2));
-output(devide(3, 0));
+// output(devide(4, 2));
+// output(devide(3, 2));
+// output(devide(3, -2));
+// output(devide(0, 2));
+// output(devide(3, 0));
 function devide(a, b)
 {
 
