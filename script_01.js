@@ -12,6 +12,7 @@
 */
 
 
+const ERROR_STR_DIV = "Division durch 0 nicht möglich";
 
 // module: division a / b |  test:
 
@@ -23,16 +24,18 @@ output(devide(3, 0));
 function devide(a, b)
 {
 
-	if (b != 0) {
-		return a / b;
-	} else {
-		return "Division durch 0 nicht möglich";
+	// if (b != 0) {
+	// 	return a / b;
+	// } else {
+	// 	return "Division durch 0 nicht möglich";
+	// }
+
+	if (b == 0) {	// Ausnahme + Abbruch
+		return ERROR_STR_DIV;
 	}
 
+	return a / b;	// Regelfall
 }
-
-
-
 
 
 
@@ -45,9 +48,6 @@ function multiply(a, b)
 {
 	return a * b;
 }
-
-
-
 
 
 
@@ -64,9 +64,6 @@ function subtract(a, b)
 
 
 
-
-
-
 // module: addition a + b |  test:
 
 // output(add(2, 2));
@@ -76,9 +73,6 @@ function add(a, b)
 {
 	return a + b;
 }
-
-
-
 
 
 
