@@ -17,35 +17,19 @@
 
 
 
-// module: addition a + b | test:
-
-
-
-
-
-
-// module: output | test:
-
-function output(outputData) {
-	console.log(outputData);
+// module: addition a + b |  test:
+output(add(2,2));
+output(add(2,-2));
+output(add(2,0));
+function add(a,b) {
+	return a + b;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-// let num1 = parseFloat(prompt("Gib eine Zahl ein:"));
-// let num2 = parseFloat(prompt("Gib die zweite Zahl ein:"));
-
-// let outputData = num1 + num2;
-
-// console.log(outputData);
+// module: output | test:
+// output("hello");
+// output(2);
+function output(outputData) {
+	console.log(outputData);
+}
+  
